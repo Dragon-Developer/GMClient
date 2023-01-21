@@ -38,3 +38,6 @@ network_send_data({
 	sprite: sprite_index,
 	index: image_index
 });
+
+obj_camera.target = id;
+instance_event_user(obj_camera, 0);

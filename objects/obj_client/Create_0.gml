@@ -6,7 +6,7 @@ force_reliable = global.is_browser;
 socket = network_create_socket(network_socket_ws);
 socket_reconnect = -1; // Used only for reconnecting (keep free glitch.com server alive)
 url = "127.0.0.1";
-port = 3000;
+port = 80;
 
 // Connecting text
 connecting = true;
@@ -85,7 +85,7 @@ msg[? "player_state"] = function(data) {
 	if (p == noone) exit;
 	p.addState(data);
 	if (p.just_created) {
-		p.userEvent(0);
+		instance_event_user(p, 0);
 	}
 }
 

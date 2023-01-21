@@ -2,7 +2,7 @@ if (ignore_begin_step) {
 	ignore_begin_step--;
 	exit;
 }
-if (global.key_released[VK_KEY.ENTER] )
+if (global.key_released[VK_KEY.ENTER])
 	global.has_released = true;
 
 for (var i = 0; i < VK_KEY.LENGTH; i++) {

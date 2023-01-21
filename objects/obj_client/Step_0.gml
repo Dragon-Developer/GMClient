@@ -6,7 +6,7 @@ if (room == rm_connect && connecting) {
 	connecting_text = "Connecting" + string_repeat(".", 1 + (connecting_t / 20));
 }
 // Toggle fullscreen
-if (keyboard_check_pressed(vk_enter) && keyboard_check(vk_alt)) {
+if (!global.is_browser && keyboard_check_pressed(vk_f10)) {
 	window_set_fullscreen(!window_get_fullscreen());
 }
 

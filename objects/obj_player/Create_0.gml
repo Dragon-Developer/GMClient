@@ -33,11 +33,3 @@ addState = function(_state) {
 }
 
 just_created = true;
-
-/// @function				userEvent(numb)
-/// @description			Execute user event.
-/// @param {Real} numb		Event Number.
-userEvent = function(numb) {
-	event_user(numb);
-	just_created = false;
-}
